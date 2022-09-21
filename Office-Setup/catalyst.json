@@ -1,0 +1,14 @@
+{
+  "functions": {
+    "targets": [
+      "Office-Project"
+    ],
+    "ignore": [
+      ".output"
+    ],
+    "source": "functions"
+  },
+  "client": {
+    "source": "client"
+  }
+}

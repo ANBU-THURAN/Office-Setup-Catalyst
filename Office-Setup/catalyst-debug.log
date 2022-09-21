@@ -1,0 +1,467 @@
+[debug] [2022-09-19T08:40:39.469Z] : 
+[debug] [2022-09-19T08:40:39.470Z] : ----------------------------------------------------------------------
+[debug] [2022-09-19T08:40:39.470Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\tanbu\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2022-09-19T08:40:39.470Z] : CLI Version:  1.13.3
+[debug] [2022-09-19T08:40:39.471Z] : Platform:     win32
+[debug] [2022-09-19T08:40:39.471Z] : Node Version: v16.17.0
+[debug] [2022-09-19T08:40:39.475Z] : Time:         Mon Sep 19 2022 14:10:39 GMT+0530 (India Standard Time)
+[debug] [2022-09-19T08:40:39.476Z] : ----------------------------------------------------------------------
+[debug] [2022-09-19T08:40:39.476Z] : 
+[debug] [2022-09-19T08:40:41.114Z] : > authorizing via signed-in user option
+[debug] [2022-09-19T08:40:41.115Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL"]
+[debug] [2022-09-19T08:40:41.128Z] : > refreshing access token <
+[debug] [2022-09-19T08:40:41.130Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.in/oauth/v2/token 
+<request body omitted>
+
+[debug] [2022-09-19T08:40:42.864Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 19 Sep 2022 08:40:43 GMT","content-type":"application/json;charset=UTF-8","content-length":"168","connection":"close","set-cookie":["6e73717622=4440853cd702ab2a51402c119608ee85; Path=/","iamcsr=0612cba5-8026-4aad-ae2d-d7a177272810;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=0612cba5-8026-4aad-ae2d-d7a177272810;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"SAMEORIGIN","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-19T08:40:42.878Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/1805000000007003 
+
+[debug] [2022-09-19T08:40:44.550Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 19 Sep 2022 08:40:44 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=97eff78e-08d3-46bb-8a93-b406bf344361;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=97eff78e-08d3-46bb-8a93-b406bf344361;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-19T08:40:44.552Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/1805000000007003/environment 
+
+[debug] [2022-09-19T08:40:44.702Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 19 Sep 2022 08:40:44 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=69462e11-78b8-4701-b82d-d95a76b33a5e;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=69462e11-78b8-4701-b82d-d95a76b33a5e;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-19T08:40:45.170Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/1805000000007003/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2022-09-19T08:40:45.351Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 19 Sep 2022 08:40:45 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=fadb1f5d-e2d2-49e3-ad58-46de88b789bc;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=fadb1f5d-e2d2-49e3-ad58-46de88b789bc;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-19T08:40:45.354Z] : unknown eol undefined hence skipping check
+[warn] [2022-09-19T08:40:45.658Z] : ‼ skipping serve of function [Office-Project] since javac version is above the compatible version
+[warn] [2022-09-19T08:40:45.659Z] : ‼ functions: No targets are ready to be served in local
+[info] [2022-09-19T08:40:45.846Z] : i client[sampleApp]: URL : http://localhost:3000/app/
+[error] [2022-09-19T08:40:46.486Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-19T08:40:46.486Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[error] [2022-09-19T08:41:03.883Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-19T08:41:03.883Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[error] [2022-09-19T08:47:20.881Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-19T08:47:20.881Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[error] [2022-09-19T08:47:54.634Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-19T08:47:54.635Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[debug] [2022-09-19T11:24:43.968Z] : 
+[debug] [2022-09-19T11:24:43.973Z] : ----------------------------------------------------------------------
+[debug] [2022-09-19T11:24:43.974Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\tanbu\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2022-09-19T11:24:43.975Z] : CLI Version:  1.13.3
+[debug] [2022-09-19T11:24:43.975Z] : Platform:     win32
+[debug] [2022-09-19T11:24:43.976Z] : Node Version: v16.17.0
+[debug] [2022-09-19T11:24:43.994Z] : Time:         Mon Sep 19 2022 16:54:43 GMT+0530 (India Standard Time)
+[debug] [2022-09-19T11:24:43.995Z] : ----------------------------------------------------------------------
+[debug] [2022-09-19T11:24:43.995Z] : 
+[debug] [2022-09-19T11:24:46.673Z] : > authorizing via signed-in user option
+[debug] [2022-09-19T11:24:46.674Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL"]
+[debug] [2022-09-19T11:24:46.701Z] : > refreshing access token <
+[debug] [2022-09-19T11:24:46.704Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.in/oauth/v2/token 
+<request body omitted>
+
+[debug] [2022-09-19T11:24:47.011Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 19 Sep 2022 11:24:47 GMT","content-type":"application/json;charset=UTF-8","content-length":"168","connection":"close","set-cookie":["6e73717622=3bcf233c3836eb7934b6f3edc257f951; Path=/","iamcsr=54006328-e537-4625-8109-21dafc6003ab;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=54006328-e537-4625-8109-21dafc6003ab;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"SAMEORIGIN","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-19T11:24:47.027Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/1805000000007003 
+
+[debug] [2022-09-19T11:24:48.392Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 19 Sep 2022 11:24:49 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=57aa3d43-6b6c-4831-8706-f68a66012529;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=57aa3d43-6b6c-4831-8706-f68a66012529;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-19T11:24:48.396Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/1805000000007003/environment 
+
+[debug] [2022-09-19T11:24:48.548Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 19 Sep 2022 11:24:49 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=56b9c566-35cc-41b5-89f5-f2558a4bfd37;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=56b9c566-35cc-41b5-89f5-f2558a4bfd37;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-19T11:24:49.158Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/1805000000007003/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2022-09-19T11:24:49.315Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 19 Sep 2022 11:24:50 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=90b4f0f0-2689-4230-82c5-993aba36ee33;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=90b4f0f0-2689-4230-82c5-993aba36ee33;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-19T11:24:49.321Z] : unknown eol undefined hence skipping check
+[warn] [2022-09-19T11:24:49.776Z] : ‼ skipping serve of function [Office-Project] since javac version is above the compatible version
+[warn] [2022-09-19T11:24:49.777Z] : ‼ functions: No targets are ready to be served in local
+[info] [2022-09-19T11:24:49.988Z] : i client[sampleApp]: URL : http://localhost:3000/app/
+[error] [2022-09-19T11:24:51.169Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-19T11:24:51.170Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[error] [2022-09-19T11:27:47.918Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-19T11:27:47.918Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[error] [2022-09-19T11:27:56.976Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-19T11:27:56.976Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[error] [2022-09-19T11:28:05.388Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-19T11:28:05.388Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[error] [2022-09-19T11:28:06.799Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-19T11:28:06.799Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[error] [2022-09-19T11:28:07.127Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-19T11:28:07.127Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[error] [2022-09-19T11:28:07.450Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-19T11:28:07.450Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[error] [2022-09-19T11:28:07.831Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-19T11:28:07.832Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[error] [2022-09-19T11:28:21.888Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-19T11:28:21.888Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[error] [2022-09-19T11:29:24.145Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-19T11:29:24.145Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[debug] [2022-09-19T17:37:48.276Z] : 
+[debug] [2022-09-19T17:37:48.278Z] : ----------------------------------------------------------------------
+[debug] [2022-09-19T17:37:48.279Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\tanbu\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2022-09-19T17:37:48.280Z] : CLI Version:  1.13.3
+[debug] [2022-09-19T17:37:48.281Z] : Platform:     win32
+[debug] [2022-09-19T17:37:48.281Z] : Node Version: v16.17.0
+[debug] [2022-09-19T17:37:48.293Z] : Time:         Mon Sep 19 2022 23:07:48 GMT+0530 (India Standard Time)
+[debug] [2022-09-19T17:37:48.294Z] : ----------------------------------------------------------------------
+[debug] [2022-09-19T17:37:48.294Z] : 
+[debug] [2022-09-19T17:37:50.993Z] : > authorizing via signed-in user option
+[debug] [2022-09-19T17:37:50.994Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL"]
+[debug] [2022-09-19T17:37:51.020Z] : > refreshing access token <
+[debug] [2022-09-19T17:37:51.023Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.in/oauth/v2/token 
+<request body omitted>
+
+[debug] [2022-09-19T17:37:51.552Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 19 Sep 2022 17:37:52 GMT","content-type":"application/json;charset=UTF-8","content-length":"168","connection":"close","set-cookie":["6e73717622=3bcf233c3836eb7934b6f3edc257f951; Path=/","iamcsr=8e1ec4fe-01b5-4995-a6e3-b8e5e4905801;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=8e1ec4fe-01b5-4995-a6e3-b8e5e4905801;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"SAMEORIGIN","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-19T17:37:51.581Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/1805000000007003 
+
+[debug] [2022-09-19T17:37:52.116Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 19 Sep 2022 17:37:52 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=84a102b3-9db2-46ea-a28c-948abd209fcf;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=84a102b3-9db2-46ea-a28c-948abd209fcf;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-19T17:37:52.121Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/1805000000007003/environment 
+
+[debug] [2022-09-19T17:37:52.476Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 19 Sep 2022 17:37:53 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=19942d6f-cd42-428b-9ef6-f03cf7f4465b;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=19942d6f-cd42-428b-9ef6-f03cf7f4465b;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-19T17:37:53.133Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/1805000000007003/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2022-09-19T17:37:53.500Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 19 Sep 2022 17:37:54 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=350b8ffe-d773-43c5-ab81-492694c2176c;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=350b8ffe-d773-43c5-ab81-492694c2176c;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-19T17:37:53.505Z] : unknown eol undefined hence skipping check
+[warn] [2022-09-19T17:37:54.024Z] : ‼ skipping serve of function [Office-Project] since javac version is above the compatible version
+[warn] [2022-09-19T17:37:54.026Z] : ‼ functions: No targets are ready to be served in local
+[info] [2022-09-19T17:37:54.265Z] : i client[sampleApp]: URL : http://localhost:3000/app/
+[error] [2022-09-19T17:37:55.684Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-19T17:37:55.684Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[debug] [2022-09-20T04:28:49.769Z] : 
+[debug] [2022-09-20T04:28:49.770Z] : ----------------------------------------------------------------------
+[debug] [2022-09-20T04:28:49.771Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\tanbu\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2022-09-20T04:28:49.771Z] : CLI Version:  1.13.3
+[debug] [2022-09-20T04:28:49.771Z] : Platform:     win32
+[debug] [2022-09-20T04:28:49.772Z] : Node Version: v16.17.0
+[debug] [2022-09-20T04:28:49.779Z] : Time:         Tue Sep 20 2022 09:58:49 GMT+0530 (India Standard Time)
+[debug] [2022-09-20T04:28:49.779Z] : ----------------------------------------------------------------------
+[debug] [2022-09-20T04:28:49.779Z] : 
+[debug] [2022-09-20T04:28:51.499Z] : > authorizing via signed-in user option
+[debug] [2022-09-20T04:28:51.499Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL"]
+[debug] [2022-09-20T04:28:51.514Z] : > refreshing access token <
+[debug] [2022-09-20T04:28:51.516Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.in/oauth/v2/token 
+<request body omitted>
+
+[debug] [2022-09-20T04:28:52.140Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 20 Sep 2022 04:28:52 GMT","content-type":"application/json;charset=UTF-8","content-length":"168","connection":"close","set-cookie":["6e73717622=3bcf233c3836eb7934b6f3edc257f951; Path=/","iamcsr=6ea22a35-b7d7-44a2-bf95-b730ef88202e;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=6ea22a35-b7d7-44a2-bf95-b730ef88202e;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"SAMEORIGIN","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-20T04:28:52.156Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/1805000000007003 
+
+[debug] [2022-09-20T04:28:52.665Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 20 Sep 2022 04:28:52 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=bf32b869-75ba-4340-aa83-541664daba93;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=bf32b869-75ba-4340-aa83-541664daba93;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-20T04:28:52.667Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/1805000000007003/environment 
+
+[debug] [2022-09-20T04:28:52.967Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 20 Sep 2022 04:28:52 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=fd1b2827-9be7-402f-86c2-998136f9f779;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=fd1b2827-9be7-402f-86c2-998136f9f779;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-20T04:28:53.404Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/1805000000007003/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2022-09-20T04:28:53.695Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 20 Sep 2022 04:28:53 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=efc48d1b-ada6-416a-bc63-ba549e18f501;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=efc48d1b-ada6-416a-bc63-ba549e18f501;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-20T04:28:53.698Z] : unknown eol undefined hence skipping check
+[warn] [2022-09-20T04:28:54.002Z] : ‼ skipping serve of function [Office-Project] since javac version is above the compatible version
+[warn] [2022-09-20T04:28:54.002Z] : ‼ functions: No targets are ready to be served in local
+[info] [2022-09-20T04:28:54.184Z] : i client[sampleApp]: URL : http://localhost:3000/app/
+[error] [2022-09-20T04:28:54.785Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T04:28:54.785Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T04:29:29.358Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T04:29:29.463Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T04:29:29.463Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T04:29:50.397Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T04:29:50.517Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T04:29:50.517Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T04:30:55.316Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T04:30:55.452Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T04:30:55.452Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T04:31:08.341Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T04:31:08.458Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T04:31:08.458Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T04:31:24.650Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T04:31:24.760Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T04:31:24.760Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T04:31:40.050Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T04:31:40.176Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T04:31:40.176Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T04:32:12.183Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T04:32:12.299Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T04:32:12.299Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T04:32:32.632Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T04:32:32.750Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T04:32:32.750Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T04:33:06.391Z] : Change(s) is detected in index.html of the Web-Client.
+[error] [2022-09-20T04:33:06.494Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T04:33:06.494Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T04:33:26.017Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T04:33:26.130Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T04:33:26.132Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T04:33:47.490Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T04:33:47.599Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T04:33:47.599Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T04:34:01.125Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T04:34:01.247Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T04:34:01.248Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T04:34:15.591Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T04:34:15.714Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T04:34:15.714Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T04:34:36.529Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T04:34:36.628Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T04:34:36.628Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T04:34:45.741Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T04:34:45.852Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T04:34:45.852Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T04:34:58.094Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T04:34:58.207Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T04:34:58.207Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T04:35:09.420Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T04:35:09.536Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T04:35:09.536Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T04:36:32.377Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T04:36:32.488Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T04:36:32.489Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T04:36:51.276Z] : Change(s) is detected in index.html of the Web-Client.
+[error] [2022-09-20T04:36:51.389Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T04:36:51.389Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T04:37:20.725Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T04:37:20.862Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T04:37:20.862Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T04:37:33.226Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T04:37:33.335Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T04:37:33.335Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T04:37:47.306Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T04:37:47.410Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T04:37:47.411Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T04:37:55.296Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T04:37:55.398Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T04:37:55.398Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T04:38:01.706Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T04:38:01.807Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T04:38:01.808Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T04:38:13.356Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T04:38:13.460Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T04:38:13.460Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T04:38:29.543Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T04:38:29.648Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T04:38:29.649Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T04:38:45.795Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T04:38:45.912Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T04:38:45.912Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T04:38:56.676Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T04:38:56.779Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T04:38:56.780Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[error] [2022-09-20T04:39:07.994Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T04:39:07.994Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T04:39:26.110Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T04:39:26.225Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T04:39:26.225Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T04:39:35.482Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T04:39:35.592Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T04:39:35.592Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T04:39:48.810Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T04:39:48.921Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T04:39:48.922Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T04:40:44.606Z] : Change(s) is detected in index.html of the Web-Client.
+[error] [2022-09-20T04:40:44.712Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T04:40:44.713Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T04:40:49.599Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T04:40:49.693Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T04:40:49.694Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T04:42:26.802Z] : Change(s) is detected in index.html of the Web-Client.
+[error] [2022-09-20T04:42:26.913Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T04:42:26.913Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T04:43:09.556Z] : Change(s) is detected in index.html of the Web-Client.
+[error] [2022-09-20T04:43:09.661Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T04:43:09.661Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T04:43:29.726Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T04:43:29.832Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T04:43:29.832Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T04:43:43.774Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T04:43:43.886Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T04:43:43.887Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T04:43:59.544Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T04:43:59.663Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T04:43:59.663Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T04:44:13.395Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T04:44:13.497Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T04:44:13.498Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T04:46:53.482Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T04:46:53.592Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T04:46:53.592Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T04:46:57.184Z] : Change(s) is detected in index.html of the Web-Client.
+[error] [2022-09-20T04:46:57.277Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T04:46:57.277Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[debug] [2022-09-20T08:00:49.193Z] : 
+[debug] [2022-09-20T08:00:49.195Z] : ----------------------------------------------------------------------
+[debug] [2022-09-20T08:00:49.196Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\tanbu\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2022-09-20T08:00:49.196Z] : CLI Version:  1.13.3
+[debug] [2022-09-20T08:00:49.197Z] : Platform:     win32
+[debug] [2022-09-20T08:00:49.198Z] : Node Version: v16.17.0
+[debug] [2022-09-20T08:00:49.211Z] : Time:         Tue Sep 20 2022 13:30:49 GMT+0530 (India Standard Time)
+[debug] [2022-09-20T08:00:49.212Z] : ----------------------------------------------------------------------
+[debug] [2022-09-20T08:00:49.212Z] : 
+[debug] [2022-09-20T08:00:51.909Z] : > authorizing via signed-in user option
+[debug] [2022-09-20T08:00:51.910Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL"]
+[debug] [2022-09-20T08:00:51.936Z] : > refreshing access token <
+[debug] [2022-09-20T08:00:51.939Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.in/oauth/v2/token 
+<request body omitted>
+
+[debug] [2022-09-20T08:00:52.346Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 20 Sep 2022 08:00:52 GMT","content-type":"application/json;charset=UTF-8","content-length":"168","connection":"close","set-cookie":["6e73717622=94da0c17b67b4320ada519c299270f95; Path=/","iamcsr=59c76153-2c46-40cd-97d3-3163c156272c;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=59c76153-2c46-40cd-97d3-3163c156272c;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"SAMEORIGIN","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-20T08:00:52.366Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/1805000000007003 
+
+[debug] [2022-09-20T08:00:52.813Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 20 Sep 2022 08:00:53 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=8238fb74-93d4-4c1a-8bef-804cd0ecab1c;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=8238fb74-93d4-4c1a-8bef-804cd0ecab1c;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-20T08:00:52.817Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/1805000000007003/environment 
+
+[debug] [2022-09-20T08:00:53.046Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 20 Sep 2022 08:00:53 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=da3854c0-5e8a-44b1-a528-c5b5ea896443;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=da3854c0-5e8a-44b1-a528-c5b5ea896443;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-20T08:00:53.672Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/1805000000007003/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2022-09-20T08:00:53.908Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 20 Sep 2022 08:00:54 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=6be40a31-4319-4d52-a3a3-49e03eb2d7fb;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=6be40a31-4319-4d52-a3a3-49e03eb2d7fb;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-20T08:00:53.914Z] : unknown eol undefined hence skipping check
+[warn] [2022-09-20T08:00:54.360Z] : ‼ skipping serve of function [Office-Project] since javac version is above the compatible version
+[warn] [2022-09-20T08:00:54.362Z] : ‼ functions: No targets are ready to be served in local
+[info] [2022-09-20T08:00:54.571Z] : i client[sampleApp]: URL : http://localhost:3000/app/
+[error] [2022-09-20T08:00:55.746Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T08:00:55.746Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[error] [2022-09-20T08:01:50.327Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T08:01:50.328Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T08:02:47.931Z] : Change(s) is detected in index.html of the Web-Client.
+[error] [2022-09-20T08:02:48.070Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T08:02:48.070Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T08:03:13.134Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T08:03:13.290Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T08:03:13.291Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T08:04:35.401Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T08:04:35.577Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T08:04:35.577Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T08:06:12.040Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T08:06:12.184Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T08:06:12.184Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[debug] [2022-09-20T08:09:55.416Z] : 
+[debug] [2022-09-20T08:09:55.418Z] : ----------------------------------------------------------------------
+[debug] [2022-09-20T08:09:55.419Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\tanbu\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2022-09-20T08:09:55.420Z] : CLI Version:  1.13.3
+[debug] [2022-09-20T08:09:55.422Z] : Platform:     win32
+[debug] [2022-09-20T08:09:55.423Z] : Node Version: v16.17.0
+[debug] [2022-09-20T08:09:55.427Z] : Time:         Tue Sep 20 2022 13:39:55 GMT+0530 (India Standard Time)
+[debug] [2022-09-20T08:09:55.428Z] : ----------------------------------------------------------------------
+[debug] [2022-09-20T08:09:55.428Z] : 
+[debug] [2022-09-20T08:09:56.993Z] : > authorizing via signed-in user option
+[debug] [2022-09-20T08:09:56.994Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL"]
+[debug] [2022-09-20T08:09:57.020Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/1805000000007003 
+
+[debug] [2022-09-20T08:09:57.543Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 20 Sep 2022 08:09:58 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=efe68f72-829b-4950-8b40-494d04d86a6b;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=efe68f72-829b-4950-8b40-494d04d86a6b;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-20T08:09:57.549Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/1805000000007003/environment 
+
+[debug] [2022-09-20T08:09:57.924Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 20 Sep 2022 08:09:58 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=9f552d93-6cd6-4eef-b8db-3506807b8d55;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=9f552d93-6cd6-4eef-b8db-3506807b8d55;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-20T08:09:58.280Z] : http port : '3000' is not available. Hence port '3001' will be used instead.
+[debug] [2022-09-20T08:09:58.300Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/1805000000007003/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2022-09-20T08:09:58.330Z] : http port : '3030' is not available. Hence port '3032' will be used instead.
+[debug] [2022-09-20T08:09:58.577Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 20 Sep 2022 08:09:59 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=2b678cc0-d027-435e-af6d-a213577bebdc;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=2b678cc0-d027-435e-af6d-a213577bebdc;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-20T08:09:58.589Z] : unknown eol undefined hence skipping check
+[warn] [2022-09-20T08:09:58.981Z] : ‼ skipping serve of function [Office-Project] since javac version is above the compatible version
+[warn] [2022-09-20T08:09:58.982Z] : ‼ functions: No targets are ready to be served in local
+[info] [2022-09-20T08:09:59.052Z] : Change(s) is detected in .catalyst\reload-script.js of the Web-Client.
+[info] [2022-09-20T08:09:59.178Z] : i client[sampleApp]: URL : http://localhost:3001/app/
+[error] [2022-09-20T08:10:00.272Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T08:10:00.272Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T08:10:17.801Z] : Change(s) is detected in main.css of the Web-Client.
+[info] [2022-09-20T08:10:17.806Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T08:10:18.010Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T08:10:18.011Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T08:10:29.393Z] : Change(s) is detected in main.css of the Web-Client.
+[info] [2022-09-20T08:10:29.395Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T08:10:29.571Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T08:10:29.571Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T08:10:38.130Z] : Change(s) is detected in main.css of the Web-Client.
+[info] [2022-09-20T08:10:38.130Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T08:10:38.297Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T08:10:38.298Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T08:10:40.261Z] : Change(s) is detected in main.css of the Web-Client.
+[info] [2022-09-20T08:10:40.261Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T08:10:40.433Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T08:10:40.434Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T08:10:47.526Z] : Change(s) is detected in main.css of the Web-Client.
+[info] [2022-09-20T08:10:47.528Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T08:10:47.692Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T08:10:47.692Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T08:10:58.879Z] : Change(s) is detected in main.css of the Web-Client.
+[info] [2022-09-20T08:10:58.880Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T08:10:59.061Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T08:10:59.061Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[info] [2022-09-20T08:11:08.164Z] : Change(s) is detected in main.css of the Web-Client.
+[info] [2022-09-20T08:11:08.166Z] : Change(s) is detected in main.css of the Web-Client.
+[error] [2022-09-20T08:11:08.327Z] : × Unable to serve the requested file: C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2
+[debug] [2022-09-20T08:11:08.328Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\catalystProject\client\fonts.googleapis.com\css2'
+[debug] [2022-09-21T04:29:54.664Z] : 
+[debug] [2022-09-21T04:29:54.667Z] : ----------------------------------------------------------------------
+[debug] [2022-09-21T04:29:54.668Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\tanbu\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2022-09-21T04:29:54.669Z] : CLI Version:  1.13.3
+[debug] [2022-09-21T04:29:54.670Z] : Platform:     win32
+[debug] [2022-09-21T04:29:54.671Z] : Node Version: v16.17.0
+[debug] [2022-09-21T04:29:54.689Z] : Time:         Wed Sep 21 2022 09:59:54 GMT+0530 (India Standard Time)
+[debug] [2022-09-21T04:29:54.690Z] : ----------------------------------------------------------------------
+[debug] [2022-09-21T04:29:54.690Z] : 
+[debug] [2022-09-21T04:29:57.483Z] : > authorizing via signed-in user option
+[debug] [2022-09-21T04:29:57.483Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL"]
+[debug] [2022-09-21T04:29:57.509Z] : > refreshing access token <
+[debug] [2022-09-21T04:29:57.512Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.in/oauth/v2/token 
+<request body omitted>
+
+[debug] [2022-09-21T04:29:58.040Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Wed, 21 Sep 2022 04:29:58 GMT","content-type":"application/json;charset=UTF-8","content-length":"168","connection":"close","set-cookie":["6e73717622=4440853cd702ab2a51402c119608ee85; Path=/","iamcsr=2b7640b4-8734-4c4c-8ff1-819ced898ee2;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=2b7640b4-8734-4c4c-8ff1-819ced898ee2;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"SAMEORIGIN","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-21T04:29:58.064Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/1805000000007003 
+
+[debug] [2022-09-21T04:29:58.625Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Wed, 21 Sep 2022 04:29:58 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=e061db25-8e8a-4d96-9dc5-11b3ab671c3c;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=e061db25-8e8a-4d96-9dc5-11b3ab671c3c;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-21T04:29:58.629Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/1805000000007003/environment 
+
+[debug] [2022-09-21T04:29:59.064Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Wed, 21 Sep 2022 04:29:59 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=afbccc3f-3e29-4188-9513-e4b985a753f0;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=afbccc3f-3e29-4188-9513-e4b985a753f0;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-21T04:29:59.750Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/1805000000007003/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2022-09-21T04:30:00.160Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Wed, 21 Sep 2022 04:30:00 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=fec199be-3e38-4b61-91b9-d539932b5e3a;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=fec199be-3e38-4b61-91b9-d539932b5e3a;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2022-09-21T04:30:00.172Z] : unknown eol undefined hence skipping check
+[warn] [2022-09-21T04:30:00.677Z] : ‼ skipping serve of function [Office-Project] since javac version is above the compatible version
+[warn] [2022-09-21T04:30:00.678Z] : ‼ functions: No targets are ready to be served in local
+[info] [2022-09-21T04:30:00.922Z] : i client[sampleApp]: URL : http://localhost:3000/app/
+[error] [2022-09-21T04:30:02.528Z] : × Unable to serve the requested file: C:\Users\tanbu\Office-Setup\client\fonts.googleapis.com\css2
+[debug] [2022-09-21T04:30:02.529Z] : Error: ENOENT: no such file or directory, stat 'C:\Users\tanbu\Office-Setup\client\fonts.googleapis.com\css2'

@@ -1,0 +1,116 @@
+@import url('fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+body{
+    background-color: #131316;
+    color:#ffffff;
+    font-family: 'Poppins',sans-serif;
+    padding:0;
+    margin:0;
+}
+
+section{
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+.row {
+    align-content: center;
+    place-items: center;
+    display: grid;  
+    grid-template-columns: 800px 600px;
+  }
+.uploadText{
+    color: #084f54;
+    margin: auto;
+    width: 50%;
+    padding: 220px 0;
+}
+.video-wrap{
+    padding: 50px;
+    height: 500px;
+    width: 500px;
+}
+.column {
+    padding: 0px;
+    height: 480px;
+    width: 500px;
+  }
+.button {
+    padding: 10px 25px;
+    font-size: 24px;
+    align-content: center;
+    place-items: center;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #0494aa;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px rgb(83, 106, 220);
+ }
+  
+.button:hover {background-color: #08617b}
+.button:active{
+    background-color: #084f54;
+    box-shadow: 0 5px rgb(8, 138, 152);
+    transform: translateY(4px);
+  }
+.video-wrap{
+    display: grid;
+    place-items:center;
+    align-content: center;
+    min-height: 30vh;
+}
+.controller{
+    display: grid;
+    place-items:center;
+    align-content: center;
+    min-height: 30vh;
+}
+canvas {
+    background-color: lightgray;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 800px;
+}
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+@media(prefers-reduced-motion){
+    .hidden{
+        transition:none;
+    }
+}
+.show{
+    opacity:1;
+    filter:blur(0);
+    transform: translateX(0);
+}
+.logos{
+    display:flex;
+}
+.logo:nth-child(2){
+    transition-delay: 200ms;
+}
+.logo:nth-child(3){
+    transition-delay: 400ms;
+}
+.logo:nth-child(4){
+    transition-delay: 600ms;
+}
+.logo{
+    background-color: rgb(8, 138, 152);
+    
+    border-radius: 0%;
+    padding-left: 0.2rem;
+    padding-top: 0.2rem;
+    padding-right: 0.2rem;
+    margin: 0 2rem;
+}
