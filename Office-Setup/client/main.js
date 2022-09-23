@@ -21,8 +21,14 @@ hiddenElements.forEach((el)=>observer.observe(el));
         const errorMsgElement = document.getElementById('span#ErrorMsg');
         
         var ctx = canvas.getContext("2d");
-        ctx.font = "30px Arial";
-        ctx.fillText("Your image will appear here", 120, 240);
+        ctx.font = "20px Arial";
+        var gradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
+        gradient.addColorStop("0"," magenta");
+        gradient.addColorStop("0.5", "blue");
+        gradient.addColorStop("1.0", "red");
+        ctx.fillStyle = gradient;
+        ctx.fillText("Your image will appear here", 180, 240);
+        
         const constraints = {
             audio: true,
             video:{

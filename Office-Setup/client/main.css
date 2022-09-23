@@ -93,6 +93,10 @@ canvas {
     filter:blur(0);
     transform: translateX(0);
 }
+.production{
+    font-size: 16px;
+    color: rgb(125, 119, 119);
+}
 .logos{
     display:flex;
 }
